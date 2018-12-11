@@ -35,6 +35,7 @@ while [ ${COUNT} -lt 9 ]; do
     let COUNT+=1
 done
 
+
 echo "Installing CPMA..."
 
 curl ${CPMA_MOD_FILES_URL} -o ${CPMA_MOD_FILES_FILE}
@@ -43,6 +44,9 @@ unzip ${CPMA_MOD_FILES_FILE} -d ${INSTALL_DIR}
 echo "Installing CPMA maps..."
 curl ${CPMA_MAP_PACK_URL} -o ${CPMA_MAP_PACK_FILE}
 unzip ${CPMA_MAP_PACK_FILE} -d ${BASEQ3_DIR}
+
+echo "Adding autoexec.cfg"
+curl ${AUTOEXEC_URL} > ${BASEQ3_DIR}/autoexec.cfg
 
 echo "Removing temporary files..."
 rm -rf ${SOURCE_DIR} ${CPMA_MOD_FILES_FILE} ${CPMA_MAP_PACK_FILE}
