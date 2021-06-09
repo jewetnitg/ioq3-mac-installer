@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-
+ORIGINAL_PATH="$PATH"
+export PATH="/usr/bin:$PATH"
 GITHUB_REPO=jewetnitg/ioq3-mac-installer
 AUTOEXEC_URL=https://raw.githubusercontent.com/${GITHUB_REPO}/master/resources/autoexec.cfg
 SOURCE_REPO=https://github.com/ioquake/ioq3
@@ -53,3 +54,4 @@ rm -rf ${SOURCE_DIR} ${CPMA_MOD_FILES_FILE} ${CPMA_MAP_PACK_FILE}
 
 echo "Quake III has been installed successfully to ${INSTALL_DIR}!"
 
+export PATH="$ORIGINAL_PATH"
