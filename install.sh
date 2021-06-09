@@ -10,10 +10,10 @@ BASEQ3_URL=https://raw.githubusercontent.com/nrempel/q3-server/master/baseq3
 BASEQ3_DIR=${INSTALL_DIR}/baseq3
 LOG_FILE=ioq3_install.log
 
-CPMA_MOD_FILES_FILE=cpma-1.51-nomaps.zip
-CPMA_MOD_FILES_URL=https://cdn.playmorepromode.com/files/cpma/cpma-1.51-nomaps.zip
-CPMA_MAP_PACK_FILE=cpma-1.51-nomaps.zip
-CPMA_MAP_PACK_URL=https://cdn.playmorepromode.com/files/cpma-mappack-full.zip
+CPMA_MOD_FILES_FILE="cpma-1.52-nomaps.zip"
+CPMA_MOD_FILES_URL="https://cdn.playmorepromode.com/files/cpma/$CPMA_MOD_FILES_FILE"
+CPMA_MAP_PACK_FILE="cpma-mappack-full.zip"
+CPMA_MAP_PACK_URL="https://cdn.playmorepromode.com/files/$CPMA_MAP_PACK_FILE"
 
 set -e # exit on error
 
